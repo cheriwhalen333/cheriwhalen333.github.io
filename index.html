@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheri Whalen | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        ttu: { red: '#CC0000', black: '#111111', gray: '#2D2D2D' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #000000; color: #FFFFFF; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 1.5rem; transition: all 0.3s ease; }
+        .glass-card:hover { border-color: #CC0000; transform: translateY(-5px); background: rgba(255, 255, 255, 0.05); }
+        .red-gradient { background: linear-gradient(135deg, #CC0000 0%, #880000 100%); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-5xl mx-auto px-6 py-12 md:py-24">
+        
+        <header class="mb-16 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">
+                Cheri <span class="text-ttu-red">Whalen</span>, M.S.
+            </h1>
+            <p class="text-xl text-gray-400 font-light max-w-2xl leading-relaxed">
+                Lead Teacher at the <span class="text-white font-bold">iOS Design Lab</span> @ Texas Tech University DFW. 
+                Integrating Design Thinking and Mobile Innovation into the future of education.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="space-y-8">
+                <h2 class="text-xs uppercase tracking-[0.3em] font-bold text-ttu-red">Active Portals</h2>
+                
+                <a href="https://cheriwhalen333.github.io/CMPA_3301_Dashboards/" class="block glass-card p-8 group">
+                    <h3 class="text-2xl font-black mb-2 group-hover:text-ttu-red transition-colors">CMPA 3301 Dashboards</h3>
+                    <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+                        Data visualization and performance analytics for computing application fundamentals. Featuring discussion synthesis and grade distribution analytics.
+                    </p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-ttu-red">Launch Dashboard →</span>
+                </a>
+
+                <div class="glass-card p-8 opacity-60">
+                    <h3 class="text-2xl font-black mb-2">iOS Design Lab</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Curriculum resources for Swift, SwiftUI, and Human-Centered AI integration in K-12 and Higher Ed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <h2 class="text-xs uppercase tracking-[0.3em] font-bold text-ttu-red">Specializations</h2>
+                
+                <div class="glass-card p-8">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-ttu-red font-bold text-xs uppercase mb-2">Design</p>
+                            <ul class="text-xs text-gray-300 space-y-1">
+                                <li>Design Thinking</li>
+                                <li>HCAI Principles</li>
+                                <li>User Experience</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-ttu-red font-bold text-xs uppercase mb-2">Technical</p>
+                            <ul class="text-xs text-gray-300 space-y-1">
+                                <li>Swift & SwiftUI</li>
+                                <li>Mobile Architecture</li>
+                                <li>Generative AI (GEMs)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 border-l-2 border-ttu-red bg-ttu-black/50">
+                    <p class="text-sm text-gray-400 italic leading-relaxed">
+                        "Empowering the next generation of mobile innovators by bridging the gap between technical skill and design empathy."
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-[10px] text-gray-500 uppercase tracking-widest">© 2026 Cheri Whalen &bull; TTU DFW</p>
+            <div class="flex gap-6">
+                <a href="https://github.com/cheriwhalen333" class="text-xs text-gray-400 hover:text-white transition-colors">GitHub Profile</a>
+                <a href="#" class="text-xs text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
